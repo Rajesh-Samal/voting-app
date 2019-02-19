@@ -1,0 +1,24 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Vote-A-Lot
+  </h1>
+  
+</div>
+<h2>Here to start: </h2>
+<div id="main-sec">
+<table>
+  <tr>
+  <td>
+    <add-vote-options (setOptions)="updateVoteOptions($event)" (setStstement)="updateVoteStatement($event)"></add-vote-options>
+  </td>
+  <td>
+    <cast-vote *ngIf="voteStatement" [voteStatement]="voteStatement" [optionList]="voteOptionList" (setVote)="updateVoteList($event)"></cast-vote>
+  </td>
+  <td class="r-border">
+    <vote-result *ngIf="voteStatement" [voteStatement]="voteStatement" [optionList]="optionList" [voteList]="voteList"></vote-result>
+  </td>
+</tr>
+</table>
+</div>
+

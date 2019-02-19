@@ -1,0 +1,5 @@
+<div id="vote-result">
+    <div class="question" >{{voteQuestion}}</div>
+    <app-votechart *ngIf="voteOptionList.length > 0" [optionList]="voteOptionList" [voteList]="updatedVoteList"></app-votechart>
+
+</div>

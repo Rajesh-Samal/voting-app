@@ -1,0 +1,27 @@
+#create-vote{
+    padding: 20px 10px;
+}
+.option-rad input{
+    margin: 10px;
+    width: 15px;
+    height: 15px;
+}
+.vote-btn{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 90%;
+}
+button{
+    padding: 5px 20px;
+}
+.vote-btn button{
+    float: right;
+}
+.question{
+    padding: 10px 20px;
+    font-size: 18px;
+}
+.option-rad{
+    margin-top: 20px;
+}

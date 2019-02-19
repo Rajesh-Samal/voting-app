@@ -1,0 +1,14 @@
+<div id="create-vote">
+    <div class="question" >{{voteQuestion}}</div>
+    <div class="option-rad">
+        <div  *ngFor="let option of voteOptionList">
+            <label>
+                <input type="radio" [(ngModel)]="voteResult" (change)="isVoted = false" name="vote-opt"  value="{{option.text}}">{{option.text}}
+            </label>
+        </div>
+    </div>
+
+    <div class="vote-btn">
+        <button [disabled]="isVoted" (click)="vote()">Vote</button>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+<div id="create-vote-options">
+
+  <div *ngIf="!isStarted" class="add-survay"> 
+    <input class="m-right-small" type="text" maxlength="40" placeholder="Enter your question?" [(ngModel)]="voteQuestion"/>
+    <button (click)="start()">Start</button>
+  </div>
+  
+  <div class="border-box question" *ngIf="isStarted">{{voteQuestion}}</div>
+
+  <ul class="opt-list" *ngIf="optionList.length > 0">
+    <li class="" *ngFor="let option of optionList; let i = index">
+        <div class="border-box m-right-small">{{option.text}}</div>
+        <button (click)="removeOption(i)">X</button>
+    </li>
+  </ul>
+
+  <div *ngIf="isStarted" class="add-option">
+    <input class="m-right-small" type="text" maxlength="40" placeholder="Enter option" [(ngModel)]="newOPtion.text"/>
+    <button (click)="addOption()">Add</button>
+  </div>
+
+  <div *ngIf="isStarted" class="reset">
+    <button (click)="reset()" *ngIf="isStarted" >Reset</button>
+    <div class="m-right-small">{{optionList.length}}/{{maxOptions}} possible answers</div>
+  </div>
+</div>

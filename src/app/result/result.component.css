@@ -1,0 +1,13 @@
+#vote-result{
+    padding: 20px 10px;
+}
+
+.question{
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.bar-chart{
+    width: 350px;
+    Margin: 40px 20px;
+}
