@@ -1,6 +1,7 @@
-# MyApp
+# VotingApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+This project is generated with [Angular CLI] version 6.0.8.
+Run 'npm install' to have all node modules and get all dependency files.
 
 ## Development server
 
