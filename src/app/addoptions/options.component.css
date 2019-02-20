@@ -3,6 +3,7 @@
 }
 button{
     padding: 5px 20px;
+    font-weight: bold;
 }
 .m-right-small{
     margin-right: 10px;
@@ -29,11 +30,13 @@ input{
     margin-bottom: 10px;
 }
 .add-option{
-    margin:40px 0px;
+    margin:20px 0px;
 }
 .opt-list{
     padding: 0px;
-    margin-top: 40px; 
+    margin-top: 20px; 
+    overflow-y: scroll;
+    height: 320px;
 }
 .opt-list li{
     list-style: none;

@@ -5,13 +5,18 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   templateUrl: './options.component.html',
   styleUrls: ['./options.component.css']
 })
-export class OptionsComponent  {
+export class OptionsComponent implements OnInit {
   optionList: any[] = [];
   voteQuestion: String = "";
   isStarted: boolean = false;
   maxOptions: number = 10;
   
   newOPtion = { text:  "", vote: 0 };
+
+  constructor() { }
+
+  ngOnInit() {
+  }
 
   @Output() setStstement = new EventEmitter<String>();
   @Output() setOptions = new EventEmitter<any[]>();

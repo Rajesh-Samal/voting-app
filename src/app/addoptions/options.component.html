@@ -16,7 +16,7 @@
 
   <div *ngIf="isStarted" class="add-option">
     <input class="m-right-small" type="text" maxlength="40" placeholder="Enter option" [(ngModel)]="newOPtion.text"/>
-    <button (click)="addOption()">Add</button>
+    <button (click)="addOption()" [disabled]="optionList.length >= maxOptions">Add</button>
   </div>
 
   <div *ngIf="isStarted" class="reset">

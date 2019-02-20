@@ -5,7 +5,7 @@ import { Component, OnInit, Input, OnChanges, SimpleChanges, SimpleChange } from
   templateUrl: './result.component.html',
   styleUrls: ['./result.component.css']
 })
-export class ResultComponent  {
+export class ResultComponent implements OnInit {
   voteQuestion: String = "";
   voteOptionList: String[] = [];
   updatedVoteList: number[] = [];

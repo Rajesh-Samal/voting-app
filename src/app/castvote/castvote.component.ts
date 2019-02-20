@@ -5,7 +5,7 @@ import { Component, OnInit, Input, Output, EventEmitter, OnChanges, SimpleChange
   templateUrl: './castvote.component.html',
   styleUrls: ['./castvote.component.css']
 })
-export class CastVoteComponent  {
+export class CastVoteComponent implements OnInit {
   voteOptionList: any[] = [];
   voteQuestion: String = "";
   voteResult: String = "";
